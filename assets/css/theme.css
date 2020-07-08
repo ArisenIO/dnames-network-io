@@ -20,7 +20,9 @@ p,a {
 a:hover {
     color: #646f79;
 }
-
+.lead {
+    font-weight: 100 !important;
+}
 h1,
 h2,
 h3,
@@ -7401,11 +7403,11 @@ h1{
 }
 p,li{
     font-family: Montserrat;
-    font-weight: 500 !important;
+    font-weight: 100 !important;
 }
 span{
     font-family: Montserrat;
-    font-weight: 501 !important;
+    font-weight: 500 !important;
 }
 /*------------------------------------
   Desktop-nav-bar

@@ -145,7 +145,7 @@
     <!-- ========== FOOTER ========== -->
     <footer class="position-absolute-bottom-0--sm">
         <div class="footer_link" >
-            <ul class="navbar">
+            <!-- <ul class="navbar">
                 <li>
                 <a href="https://dbrowser.com" target="_blank">dBrowser</a>
                 </li>
@@ -155,7 +155,7 @@
                 <li>
                 <a href="https://arisen.network" target="_blank">Arisen</a>
                 </li>
-            </ul>
+            </ul> -->
             <div class="social-icon">
                 <li>
                     <a href="https://facebook.com/peepsology" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
@@ -179,17 +179,16 @@
         </div>
         <div class="container text-center space-1">
             <p class="small mb-0">&copy Copyright 2020 Peeps. All rights reserved</p>
-        </div>
-        <div class="container text-center space-1">
             <p class="powered-by small mb-0">
-                Powered by <a href="https://peepsx.com" target="_blank"><img src="assets/img/logos/arisen-icon.png" alt="peeps-logo"></a> made In <img src="assets/img/logos/american-flag.jpg" style="height: 27px; width: 50px" alt="">
+                Powered by <a href="https://peepsx.com" target="_blank"><img src="assets/img/logos/arisen-icon.png" alt="peeps-logo"></a> and Made in <img src="assets/img/logos/american-flag.jpg" style="height: 27px; width: 50px" alt="">
             </p>
         </div>
+        
     </footer>
     <!-- ========== END FOOTER ========== -->
     <div class="u-sticky-footer">
-        <img src="assets/img/logos/arisen-icon.png" alt="dweb-logo">
-        <p>You can view this website as a dSite on the dWeb at <a href="https://peepsx.com">dweb://arisen.network</a></p>
+        <img src="assets/img/logos/dweb-logo.png" alt="dweb-logo">
+        <p>You can view this website as a dSite on the dWeb at <a href="https://peepsx.com">dweb://dnames/network</a></p>
     </div>
 
     <!-- ========== SECONDARY CONTENTS ========== -->
@@ -272,7 +271,7 @@
 
          axios.get('https://nv6khovry9.execute-api.us-east-1.amazonaws.com/dev/rsn_price_from_bts')
             .then(function (response) {
-            document.getElementById('rix-price').innerHTML = `RIX Price : $ ${parseFloat(response.data.data.USD.price).toFixed(4)}`;
+            document.getElementById('rix-price').innerHTML = `RIX: $ ${parseFloat(response.data.data.USD.price).toFixed(4)}`;
             })
             .catch(function (error) {
                 console.log(error)
